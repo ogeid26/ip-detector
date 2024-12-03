@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
+<main class="container">
+    <form id ="form">
+        <label> IP del usuario
+            <input required id="input" type="text" placeholder="Pega la IP">
+            <small>Ejemplo: 104.106.137.0</small>
+        </label> 
+        <button type="submit" id="submit"> Buscar </button>
+    </form> 
+
+    <div>
+        <pre id="results">
+
+        </pre>
+    </div>
+
+
+</main>
+
+<style>
+    main.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        text-align: center;
+    }
+    form {
+        width: 100%;
+        max-width: 400px;
+    }
+</style>
